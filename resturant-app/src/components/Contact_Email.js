@@ -1,5 +1,5 @@
 
-function BookingPage() {
+function Contact_Email() {
     return (
       <body>
   
@@ -7,5 +7,5 @@ function BookingPage() {
     );
   }
   
-  export default BookingPage;
+  export default Contact_Email;
   

@@ -11,12 +11,13 @@ import Social_Media_Adress from "./Social_Media_Adress";
 import Social_Media_Phone_Number from "./Social_Media_Phone_Number";
 import Social_Media_Email from "./Social_Media_Email";
 import "../styles/Footer.css";
-import { VStack } from "@chakra-ui/react";
+import { VStack, HStack } from "@chakra-ui/react";
 
 function Footer() {
   return (
     <div>
       <footer>
+        <HStack>
         <img />
         <div>
           <VStack>
@@ -66,6 +67,7 @@ function Footer() {
             </Link>
           </VStack>
         </div>
+        </HStack>
       </footer>
       <Routes>
         <Route path="/" />

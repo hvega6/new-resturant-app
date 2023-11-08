@@ -1,19 +1,17 @@
 import { HStack, Image, Text, VStack } from "@chakra-ui/react";
 
-
-const Testimonials = ({}) => {
+const Testimonials = ({ rating, imageSrc, raterName, description }) => {
   return (
     <VStack>
-      <h2>Testimonials</h2>
       <HStack>
-        <Text as='b'>{rating}</Text>
-        <Image src={imageSrc} alt="testimonial-images"/>
-        <Text as='b'>{raterName}</Text>
-        <Text>{review}</Text>
+        <Text as="b">{rating}</Text>
+        <Image src={imageSrc} alt="testimonial-images"       
+        height={175}
+        width={200}/>
+        <Text as="b">{raterName}</Text>
+        <Text>{description}</Text>
       </HStack>
     </VStack>
-
   );
 };
-  export default Testimonials;
-  
+export default Testimonials;

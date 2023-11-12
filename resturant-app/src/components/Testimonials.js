@@ -3,9 +3,9 @@ import { HStack, Image, Text, VStack } from "@chakra-ui/react";
 const Testimonials = ({ rating, imageSrc, raterName, description }) => {
   return (
     <VStack>
-      <HStack>
+      <HStack> 
         <Text as="b">{rating}</Text>
-        <Image src={imageSrc} alt="testimonial-images"       
+        <Image src={imageSrc} alt="testimonial-images"
         height={175}
         width={200}/>
         <Text as="b">{raterName}</Text>

@@ -2,7 +2,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Menu from "./Menu";
 import About from "./About";
 import Login from "./Login";
-import Reservations from "./Reservations";
 import Online_Order from "./Online_Order";
 import Contact_Address from "./Contact_Address";
 import Contact_Phone_Number from "./Contact_Phone_Number";
@@ -12,6 +11,7 @@ import Social_Media_Phone_Number from "./Social_Media_Phone_Number";
 import Social_Media_Email from "./Social_Media_Email";
 import "../styles/Footer.css";
 import { VStack, HStack } from "@chakra-ui/react";
+import BookingPage from "./BookingPage";
 
 function Footer() {
   return (
@@ -30,7 +30,7 @@ function Footer() {
             <Link to="/Menu" className="nav-item">
               Menu
             </Link>
-            <Link to="/Reservations" className="nav-item">
+            <Link to="/BookingPage" className="nav-item">
               Reservations
             </Link>
             <Link to="/Online_Order" className="nav-item">
@@ -73,7 +73,7 @@ function Footer() {
         <Route path="/" />
         <Route path="/About" element={<About />} />
         <Route path="/Menu" element={<Menu />} />
-        <Route path="/Reservation" element={<Reservations />} />
+        <Route path="/BookingPage" element={<BookingPage />} />
         <Route path="/Online_Order" element={<Online_Order />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Contact_Address" element={<Contact_Address />} />

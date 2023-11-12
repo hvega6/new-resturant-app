@@ -1,10 +1,14 @@
 import './App.css';
-import Homepage from './Homepage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-      <Homepage/>
+    <body>
+      <Header/>
+      <Footer/>
+    </body>
   );
-}
+};
 
 export default App;

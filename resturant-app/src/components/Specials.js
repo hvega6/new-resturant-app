@@ -1,3 +1,5 @@
+import { HStack } from '@chakra-ui/react';
+
 const card = [
   {
     getImageSrc: () => require('../icons_assets/greek salad.jpg'),
@@ -22,11 +24,15 @@ const card = [
   },
 ]
 
-function Specials() {
+function Specials({title, price, description, test}) {
     return (
       <body>
+        <HStack>
         <h2>Specials</h2>
         <button>Online Menu</button>
+        
+        </HStack>
+
       </body>
     );
   }

@@ -9,7 +9,7 @@ import BookingPage from './BookingPage';
 
 function Header() {
     return(
-        <div>
+        <section>
           <nav>
             <Link to='/' className='nav-item'>Home</Link>
             <Link to='/About' className='nav-item'>About</Link>
@@ -27,7 +27,7 @@ function Header() {
               <Route path='Login' element={<Login /> } />
             </Route>
           </Routes>
-        </div>
+        </section>
     );
 }
 
